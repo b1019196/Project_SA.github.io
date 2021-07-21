@@ -1,3 +1,3 @@
 function submitClick() {
-  document.location.href = "MailForm_thirdのurl";
+  document.location.href = "https://b1019196.github.io/SA_Third/";
 }
