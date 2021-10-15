@@ -1,0 +1,155 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+  <meta charset="utf-8">
+  <link rel="stylesheet" href="../CSS/mobile_page.css">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+  <meta name="viewport" content="width=device-width,initial-scale=1" />
+  <script src="https://code.jquery.com/jquery-3.2.1.min.js"></script>
+  <title></title>
+</head>
+
+<body>
+  <!-- ほろ酔い -->
+  <section id="horo">
+    <div class="horo-first">
+      <p>
+        <br>
+        プロローグ
+        <br><br>
+        未来大生のわたしは、いつも通りの
+        <br><br>
+        平凡な日常を送っていた
+        <br><br>
+        1限が始まる5分前に起床し、授業が
+        <br><br>
+        終わればバイトへ行く
+        <br><br>
+        そして朝方までSNSなどを見て時間
+        <br><br>
+        を過ごす
+        <br><br>
+        わたしは寝床につく直前に、その日
+        <br><br>
+        に送られたメールを確認する
+        <br><br>
+        現在時刻は朝4時
+        <br><br>
+        「1限あるからもう寝ないとな。メ
+        <br><br>
+        ール確認して寝るかな...」
+        <br><br>
+        そう思い、メールボックスを開く
+        <br><br>
+        メールボックスを開くと心当たりの
+        <br><br>
+        ないメールが届いていた
+        <br><br>
+        それは会社”○○○○”からのもので
+        <br><br>
+        あった
+        <br><br>
+        件名を見ると”○○○○”と書かれて
+        <br><br>
+        いる
+        <br><br>
+        「”○○○○”だから”○○○○”につ
+        <br><br>
+        いてかな」
+        <br><br>
+        「”○○○○”に心当たりはないけ
+        <br><br>
+        ど’○○○○’になるのは困るかも」
+        <br><br>
+        「よくわからないけど重要なメール
+        <br><br>
+        っぽいし...」
+        <br><br>
+        「確認してみよう...」
+      </p> <button id="button1" type="button" name="button1">続ける</button>
+
+    </div>
+  </section>
+  <div class="head-container">
+    <div class="box"><a href="#">
+        <<メールボックス </a>
+    </div>
+    <div class="edit"><a href="#">編集</a></div>
+  </div>
+  <div class="jushin">
+    <h1>受信</h1>
+  </div>
+  <div class="column">
+    <div class="title" ontouchstart="">
+      <div class="title-time" id="title">
+        <p1><span style="color: blue">●</span>title</p1>
+        <p2>15:00></p2>
+      </div>
+      <p id="title-words">本文</p>
+      <br>
+    </div>
+    <div class="title-time1">
+      <p1>会員特典のご案内</p1>
+      <p2>15:00</p2>
+      <p id="title-words">本文</p>
+    </div> <br>
+    <div class="title-time1">
+      <p1>会員特典のご案内</p1>
+      <p2>15:00</p2>
+      <p id="title-words">本文</p>
+    </div> <br>
+    <div class="title-time1">
+      <p1>会員特典のご案内</p1>
+      <p2>15:00</p2>
+      <p id="title-words">本文</p>
+    </div> <br>
+    <div class="title-time1">
+      <p1>会員特典のご案内</p1>
+      <p2>15:00</p2>
+      <p id="title-words">本文</p>
+    </div> <br>
+    <div class="title-time1">
+      <p1>会員特典のご案内</p1>
+      <p2>15:00</p2>
+      <p id="title-words">本文</p>
+    </div> <br>
+  </div>
+
+  <div class="back">
+    <div class="title-up">
+      <p id="gohome">戻る</p>
+      <hr>
+    </div>
+    <div class="back-under">
+      <div class="back-title">
+        <img id="icon" src="icon.png" width="50" height="50">
+        <p1>title</p1>
+        <p2>15:00</p2>
+        <hr>
+      </div>
+      <div class="back-honbun">
+        <p>本文</p>
+        <p>https://www</p>
+      </div>
+    </div>
+  </div>
+
+  <script type="text/javascript">
+    $('#button1').click(function() {
+      $('#horo').hide();
+    });
+    $('.title').click(function() {
+      $('.back').fadeIn();
+    });
+    $('#gohome').click(function() {
+      $('.back').hide();
+    });
+    $('.back-honbun p').click(function() {
+      location.href = "../HTML/MailForm_test.html"
+    });
+  </script>
+
+</body>
+
+</html>
